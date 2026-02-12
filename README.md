@@ -56,8 +56,8 @@ ClickSight is a modern, schema-agnostic analytics UI that transforms your ClickH
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/clicksight.git
-cd clicksight
+git clone https://github.com/Allen-Digital-OSS/clicksight-oss.git
+cd clicksight-oss
 
 # Install dependencies
 npm install
@@ -86,12 +86,9 @@ Open http://localhost:5173 in your browser!
 
 ## 📖 Documentation
 
-- **[Installation Guide](docs/INSTALLATION.md)** - Detailed setup instructions
 - **[Database Setup](docs/DATABASE_SETUP.md)** - ClickHouse tables for users, charts, and dashboards
 - **[Schema Setup Guide](docs/SCHEMA_SETUP_GUIDE.md)** - Configure ClickSight for your event data schema
 - **[Example Schemas](docs/EXAMPLE_SCHEMAS.md)** - Pre-built schemas for common use cases
-- **[Deployment Guide](docs/DEPLOYMENT.md)** - Docker and Kubernetes deployment
-- **[Architecture](docs/ARCHITECTURE.md)** - Technical architecture overview
 - **[Feature Documentation](docs/FEATURE_DOCUMENTATION.md)** - Complete feature reference
 - **[Contributing](CONTRIBUTING.md)** - How to contribute to ClickSight
 
@@ -175,7 +172,7 @@ docker run -d \
   clicksight:latest
 ```
 
-See [Deployment Guide](docs/DEPLOYMENT.md) for Kubernetes and production deployment.
+See the [Schema Setup Guide](docs/SCHEMA_SETUP_GUIDE.md) for more deployment details.
 
 ---
 
@@ -183,22 +180,22 @@ See [Deployment Guide](docs/DEPLOYMENT.md) for Kubernetes and production deploym
 
 ### Event Trends (Insights)
 
-![Insights](docs/images/insights-screenshot.png)
+![Insights](docs/images/insights.png)
 _Multi-metric trend analysis with breakdown capabilities_
 
 ### Funnel Analysis
 
-![Funnels](docs/images/funnels-screenshot.png)
+![Funnels](docs/images/funnels.png)
 _Multi-step conversion tracking with time windows_
 
 ### User Path Analysis
 
-![User Paths](docs/images/paths-screenshot.png)
+![User Paths](docs/images/paths.png)
 _Sankey diagram visualization of user journeys_
 
 ### Dashboards
 
-![Dashboards](docs/images/dashboard-screenshot.png)
+![Dashboards](docs/images/dashboard.png)
 _Drag-and-drop dashboard builder_
 
 ---
@@ -244,7 +241,7 @@ See [Schema Setup Guide](docs/SCHEMA_SETUP_GUIDE.md) for optimization tips.
 - **No data storage** - all queries run directly on ClickHouse
 - **User-specific saved charts** with sharing controls
 
-For production deployment, see [Deployment Guide](docs/DEPLOYMENT.md) for security best practices.
+For production deployment, ensure HTTPS is configured for ClickHouse connections and OAuth callbacks.
 
 ---
 
@@ -264,8 +261,8 @@ ClickSight is [MIT licensed](LICENSE).
 
 ## 📬 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/clicksight/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/clicksight/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Allen-Digital-OSS/clicksight-oss/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Allen-Digital-OSS/clicksight-oss/discussions)
 - **Documentation**: [docs/](docs/)
 
 ---
@@ -285,7 +282,7 @@ ClickSight is [MIT licensed](LICENSE).
 
 ### Community Requests
 
-Have a feature request? [Open an issue](https://github.com/yourusername/clicksight/issues/new) or start a [discussion](https://github.com/yourusername/clicksight/discussions)!
+Have a feature request? [Open an issue](https://github.com/Allen-Digital-OSS/clicksight-oss/issues/new) or start a [discussion](https://github.com/Allen-Digital-OSS/clicksight-oss/discussions)!
 
 ---
 
@@ -293,7 +290,7 @@ Have a feature request? [Open an issue](https://github.com/yourusername/clicksig
 
 If you find ClickSight useful, please consider starring the repository!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/clicksight&type=Date)](https://star-history.com/#yourusername/clicksight&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Allen-Digital-OSS/clicksight-oss&type=Date)](https://star-history.com/#Allen-Digital-OSS/clicksight-oss&Date)
 
 ---
 
